@@ -22,7 +22,7 @@ class News extends CI_Controller{
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 
-		$data['title'] = 'Create a news item';
+		$data['title'] = 'Create NEWS';
 
 		$this->form_validation->set_rules('title', 'Title', 'required');
 		$this->form_validation->set_rules('text', 'text', 'required');
