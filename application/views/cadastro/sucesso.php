@@ -1,0 +1,1 @@
+<h1>Cadastro efetuado com sucesso</h1>

@@ -10,7 +10,7 @@
 		{
 			$this->load->helper('url');
 			$data = array(
-				'nome' => $this->ínput->post('nome'),
+				'nome' => $this->input->post('nome'),
 				'email' => $this->ínput->post('email'),
 				'sexo' => $this->ínput->post('sexo'),
 				'telefone' => $this->ínput->post('telefone')
