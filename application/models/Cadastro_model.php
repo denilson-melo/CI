@@ -11,10 +11,11 @@
 			$this->load->helper('url');
 			$data = array(
 				'nome' => $this->input->post('nome'),
-				'email' => $this->ínput->post('email'),
-				'sexo' => $this->ínput->post('sexo'),
-				'telefone' => $this->ínput->post('telefone')
+				'email' => $this->input->post('email'),
+				'senha' => $this->input->post('senha'),
+				'sexo' => $this->input->post('sexo')
 			);
+			//return 0;
 			return $this->db->insert('usuario', $data);
 		}	
 	}

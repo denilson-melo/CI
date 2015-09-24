@@ -1,17 +1,40 @@
-		<?php echo validation_errors(); ?>
-		<?php echo form_open('cadastro'); ?>
-			<label for="nome">Nome</label>
-			<input type="text" name="nome"/>
+	<?php echo validation_errors(); ?>
+	<?php echo form_open('cadastro'); ?>
+
+			<div class="input-field">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" class="col s16"/>
+			</div>
 			
-			<label for="email">Email</label>
-			<input type="email" name="email"/>
-			
-			<label for="sexo">Sexo</label>
-			<select name="sexo">
-				<option value="M">Masculino</option>
-				<option value="F">Feminino</option>
-			</select>
-			<input type="text" name="telefone"/>
-			<input type="submit" name="submit"/>
+			<div class="input-field">
+				<label for="email">Email</label>
+				<input type="email" name="email"/>
+			</div>
+
+			<div class="input-field">
+				<label for="senha">Senha</label>
+				<input type="password" name="senha"/>
+			</div>
+
+			<div class="input-field">
+				<label for="senha_validar">Confirmar Senha</label>
+				<input type="password" name="senha_validar"/>
+			</div>
+				
+			<div class="col s12">	
+				<label>Sexo</label>
+				<select name="sexo" class="browser-default">
+					<option value="M">Masculino</option>
+					<option value="F">Feminino</option>
+				</select>
+			</div>
+
+			<div class="input-field">
+				<label for="telefone">Telefone</label>
+				<input type="text" name="telefone"/>
+			</div>
+
+				<input type="submit" name="submit"/>		
 
 		</form>
+
