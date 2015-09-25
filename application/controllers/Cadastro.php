@@ -30,13 +30,6 @@ class Cadastro extends CI_Controller
 		}		
 		//FOOTER
 		$this->load->view('templates/footer');
-	}
-	
-	public function view()
-	{
-		
-		$this->load->view('news');
-		
-	}
+	}	
 }
  ?>

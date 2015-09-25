@@ -1,6 +1,6 @@
 	<?php echo validation_errors(); ?>
 	<?php echo form_open('cadastro'); ?>
-
+	
 			<div class="input-field">
 				<label for="nome">Nome</label>
 				<input type="text" name="nome" class="col s16"/>
@@ -34,7 +34,10 @@
 				<input type="text" name="telefone"/>
 			</div>
 
-				<input type="submit" name="submit"/>		
+				<button class="btn waves-effect waves-light" type="submit" name="action">
+					Cadastrar
+					<i class="material-icons right">send</i>
+				</button>
 
 		</form>
 
