@@ -1,0 +1,622 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"loa",
+				"loa	load"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"load",
+				"load"
+			],
+			[
+				"form_vali",
+				"form_validation"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"php",
+				"php	<?php … ?>"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"h3",
+				"h3	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/Login.php",
+			"settings":
+			{
+				"buffer_size": 1116,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Denilson/AppData/Local/Temp/calibre_awql3y/fjvpzq_view_device_book.md",
+			"settings":
+			{
+				"buffer_size": 6710,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/Login_model.php",
+			"settings":
+			{
+				"buffer_size": 767,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "|+| \"$post\"\n|+| \"$data\"\n",
+			"settings":
+			{
+				"buffer_size": 24,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> C:\\xampp\\htdocs\\application\\controllers\\Login.php\n	|+| 30\n=> C:\\xampp\\htdocs\\application\\models\\Login_model.php\n	|+| 11\n",
+			"settings":
+			{
+				"buffer_size": 123,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: load"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/application/controllers/News.php",
+		"/C/xampp/htdocs/application/controllers/Cadastro.php",
+		"/C/xampp/htdocs/system/database/DB.php",
+		"/C/xampp/htdocs/system/core/Controller.php",
+		"/C/xampp/htdocs/system/core/Model.php",
+		"/C/xampp/htdocs/application/models/Cadastro_model.php",
+		"/C/xampp/htdocs/system/core/Input.php",
+		"/C/xampp/htdocs/application/controllers/Login.php",
+		"/C/xampp/htdocs/application/models/Login_model.php",
+		"/C/xampp/htdocs/application/views/cadastro/cadastro.php",
+		"/C/Users/Denilson/Desktop/Sublime/Data/Packages/User/Xdebug.sublime-settings",
+		"/C/xampp/htdocs/ci.sublime-project",
+		"/C/xampp/htdocs/system/libraries/Form_validation.php",
+		"/C/xampp/htdocs/system/core/Loader.php",
+		"/C/xampp/htdocs/system/core/CodeIgniter.php",
+		"/C/xampp/htdocs/system/core/Benchmark.php",
+		"/C/xampp/htdocs/system/core/Common.php",
+		"/C/xampp/htdocs/system/helpers/form_helper.php",
+		"/C/Users/Denilson/Desktop/Sublime/Data/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/C/xampp/htdocs/index.php",
+		"/C/xampp/htdocs/application/views/templates/header.php",
+		"/C/xampp/htdocs/application/config/routes.php",
+		"/C/xampp/htdocs/application/views/cadastro/login.php",
+		"/C/xampp/htdocs/application/views/cadastro/sucesso.php",
+		"/C/Users/Denilson/Desktop/Sublime/Data/Packages/User/load.sublime-snippet",
+		"/C/xampp/htdocs/application/views/templates/footer.php",
+		"/C/Users/Denilson/Downloads/slurm-13704-cuda.out",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/compilar_opencl.sh",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/ocl.cpp",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/run.sh",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-14001double.out",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/run-teste.sh",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/runcu.sh",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/cuda2.cu",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/opencl2.cl",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/ocl.cl",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/SaxpyKernel.cl",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/SaxpyHost.cpp",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-13999double.out",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-14000double.out",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-13705-ocl.out",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-13704-cuda.out",
+		"/C/Users/Denilson/AppData/Local/Temp/Temp2_CUDA.zip/slurm-12073.out",
+		"/C/Users/Denilson/AppData/Local/Temp/Temp2_CUDA.zip/slurm-12065.out",
+		"/C/Users/Denilson/Downloads/slurm-13705-ocl.out",
+		"/C/Users/Denilson/Desktop/Sublime/Data/Packages/WakaTime/WakaTime.sublime-settings",
+		"/C/Users/Denilson/Desktop/Sublime/Data/Packages/User/WakaTime.sublime-settings",
+		"/C/xampp/htdocs/application/models/index.html",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-13704.out",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-13705.out",
+		"/C/Users/Denilson/Downloads/Compressed/opencl/opencl/slurm-13703.out",
+		"/C/xampp/htdocs/application/models/News_model.php",
+		"/C/xampp/htdocs/application/views/templates/README.md",
+		"/C/xampp/htdocs/application/views/news/create.php",
+		"/C/xampp/htdocs/application/views/news/success.php",
+		"/C/xampp/htdocs/application/views/news/index.php",
+		"/C/xampp/htdocs/application/views/news/view.php",
+		"/C/xampp/htdocs/application/views/pages/about.php",
+		"/C/xampp/htdocs/application/views/pages/home.php",
+		"/C/xampp/htdocs/application/config/database.php",
+		"/C/Users/Denilson/Desktop/CI/CI/application/views/templates/footer.php",
+		"/C/Users/Denilson/Desktop/CI/CI/application/controllers/Pages.php",
+		"/C/Users/Denilson/Desktop/CI/CI/application/views/templates/header.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"php",
+			"header",
+			"SaxpyKernel",
+			"Registrar",
+			"Login",
+			"Registrar",
+			"        ",
+			"senha_confirmar",
+			"');\n",
+			"		$"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/Login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1116,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Denilson/AppData/Local/Temp/calibre_awql3y/fjvpzq_view_device_book.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/models/Login_model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6,
+								6
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.924812030075,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ci.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"80":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"84":
+				{
+					"group": 0,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
