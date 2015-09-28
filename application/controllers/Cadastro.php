@@ -26,8 +26,12 @@ class Cadastro extends CI_Controller
 		if ( $this->form_validation->run() === FALSE ){
 			$this->load->view('cadastro/cadastro');
 		} else {
-			$this->cadastro_model->criar();
-			$this->load->view('cadastro/sucesso');
+			if ( $this->cadastro_model->emailExiste() ){
+				$this->load->view('cadastro/cadastro');
+			} else {
+				$this->cadastro_model->criar();
+				$this->load->view('cadastro/sucesso');
+			}
 		}		
 		//FOOTER
 		$this->load->view('templates/footer');

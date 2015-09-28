@@ -35,7 +35,7 @@ class Login extends CI_Controller
 			if ( isset($data['erro']) ){				
 				$this->load->view('cadastro/login', $data);
 			} else {
-				$this->load->view('cadastro/sucesso', $data);
+				$this->load->view('cadastro/logado', $data);
 			}
 		}
 		//FOOTER
