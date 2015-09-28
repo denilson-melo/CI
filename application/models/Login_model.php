@@ -33,6 +33,31 @@ class Login_model extends CI_Model{
 		}
 
 		return $send;
+		
 	}
+
+	
+	public function valida_login($email=NULL, $senha=NULL)
+	{
+		if($email!=NULL || $senha!=NULL):
+			$this->db->select('*');
+			$this->db->from('usuario');
+			$this->db->join('pessoa as pes', 'usuario.fk_id_pessoa = pes.id_pessoa');
+			$this->db->where('usuario.email', $email);
+			$this->db->where('usuario.senha', $senha);
+			
+			$resultado = $this->db->get();
+			
+			if($resultado->num_rows() == 1):
+				return $resultado->result();
+			else:
+				return false;
+			endif;
+		endif;
+	}
+	
+	
+	
+	
 }
  ?>

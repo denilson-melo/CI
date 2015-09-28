@@ -5,6 +5,8 @@ class Cadastro extends CI_Controller
 		parent::__construct();
 		$this->load->model('cadastro_model');
 		$this->load->helper('url_helper');
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<small class="red-text right"> *', '</small>');
 	}
 
 	public function index()
@@ -14,11 +16,14 @@ class Cadastro extends CI_Controller
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		
-		$this->form_validation->set_rules('nome', 'Nome', 'required');
-		$this->form_validation->set_rules('email', 'Email', 'required');
+		$this->form_validation->set_rules('nome', 'Nome', 'required|min_length[10]|max_length[60]');
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 		$this->form_validation->set_rules('senha', 'Senha', 'required');
+		$this->form_validation->set_rules('senha_validar', 'Senha', 'required|matches[senha]');
 		$this->form_validation->set_rules('sexo', 'Sexo', 'required');
+
 		$data['title'] = "Efetuar cadastro";
+		$data['erro_meu'] = "hsaushuahsauhsua";
 
 		//HEAD
 		$this->load->view('templates/header', $data);
