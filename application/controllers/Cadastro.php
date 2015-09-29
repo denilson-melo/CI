@@ -11,19 +11,18 @@ class Cadastro extends CI_Controller
 
 	public function index()
 	{
-		
+		print_r($_SESSION);
 		$this->load->helper('url');
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		
-		$this->form_validation->set_rules('nome', 'Nome', 'required|min_length[10]|max_length[60]');
-		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-		$this->form_validation->set_rules('senha', 'Senha', 'required');
-		$this->form_validation->set_rules('senha_validar', 'Senha', 'required|matches[senha]');
-		$this->form_validation->set_rules('sexo', 'Sexo', 'required');
+		$this->form_validation->set_rules('nome', 'Nome', 'trim|required|min_length[2]|max_length[60]');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[usuario.email]');
+		$this->form_validation->set_rules('senha', 'Senha', 'trim|required');
+		$this->form_validation->set_rules('senha_validar', 'Senha', 'trim|required|matches[senha]');
+		$this->form_validation->set_rules('sexo', 'Sexo', 'trim|required');
 
 		$data['title'] = "Efetuar cadastro";
-		$data['erro_meu'] = "hsaushuahsauhsua";
 
 		//HEAD
 		$this->load->view('templates/header', $data);
@@ -31,12 +30,8 @@ class Cadastro extends CI_Controller
 		if ( $this->form_validation->run() === FALSE ){
 			$this->load->view('cadastro/cadastro');
 		} else {
-			if ( $this->cadastro_model->emailExiste() ){
-				$this->load->view('cadastro/cadastro');
-			} else {
-				$this->cadastro_model->criar();
-				$this->load->view('cadastro/sucesso');
-			}
+			$this->cadastro_model->criar();
+			$this->load->view('cadastro/sucesso');
 		}		
 		//FOOTER
 		$this->load->view('templates/footer');

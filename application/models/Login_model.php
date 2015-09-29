@@ -3,39 +3,39 @@ class Login_model extends CI_Model{
 	public function __construct()
 	{
 		$this->load->database();
-	}
-
-	public function login()
-	{
 		$this->load->helper('url');
-		$post = array(
-			'email' => $this->input->post('email'),
-			'senha' => $this->input->post('senha')
-		);
-
-		$send = array();
-		$query = $this->db->query("SELECT * FROM usuario WHERE email='".$post['email']."'");
-		foreach ($query->result() as $row) {
-				$send['nome'] = $row->nome;
-				$send['email'] = $row->email;
-				$send['senha'] = $row->senha;			
-		}
-
-		if ($query){
-			if ( password_verify( $post['senha'], $send['senha'] )) {
-				
-			}else {
-				$send = array();
-				$send['erro'] = "Senha incorreta";
-			}
-		}else{
-			$send['erro'] = "Usuário não encontrado";
-		}
-
-		return $send;
-		
 	}
-
+	
+	public function get_email_existe( $email )
+	{
+		$this->db->select('email');
+		$this->db->from('usuario');
+		$this->db->where('email', $email);
+		$resultado = $this->db->get();
+		if ( $resultado->num_rows() == 1){
+			return true;
+		}
+		return false;
+	}
+	
+	public function login( $email, $senha )
+	{
+		$data = array();
+		$this->db->select('*');
+		$this->db->from('usuario');
+		$this->db->where('email', $email);
+		$resultado = $this->db->get();
+		foreach ($resultado->result() as $row) {
+				$data['nome'] = $row->nome;
+				$data['email'] = $row->email;
+				$data['senha'] = $row->senha;			
+		}
+		if ( !password_verify( $senha, $data['senha'] )) {
+			$data = array();
+			$data['erro'] = "Senha incorreta";
+		}
+		return $data;
+	}
 	
 	public function valida_login($email=NULL, $senha=NULL)
 	{
@@ -49,14 +49,12 @@ class Login_model extends CI_Model{
 			$resultado = $this->db->get();
 			
 			if($resultado->num_rows() == 1):
-				return $resultado->result();
+				return $resultado;
 			else:
 				return false;
 			endif;
 		endif;
 	}
-	
-	
 	
 	
 }

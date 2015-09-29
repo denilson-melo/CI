@@ -19,12 +19,5 @@
 			return $this->db->insert('usuario', $data);
 		}
 		
-		public function emailExiste(){
-			$query = $this->db->query("SELECT email FROM usuario WHERE email = '".$this->input->post('email')."';");
-			if ($query->num_rows() > 0){
-				return true;
-			}
-			return false;
-		}
 	}
  ?>

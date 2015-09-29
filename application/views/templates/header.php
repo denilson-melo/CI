@@ -12,7 +12,13 @@
 				<a href="#" class="brand-logo center"></a>
 				<a href="#" class="button-collapse" data-activates="nav-mobile"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="login">Login</a></li>
+					<?php 
+						if ( $_SESSION['logado']==true ){
+							echo '<li><a href="#">'.$_SESSION["nome"].'</a></li>';
+						} else { 
+							echo '<li><a href="login">Login</a></li>';
+						}
+					?>
 					<li><a href="cadastro">Registrar</a></li>
 				</ul>
 				<ul class="side-nav" id="nav-mobile">

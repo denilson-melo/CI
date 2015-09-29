@@ -56,3 +56,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['cadastro'] = 'cadastro';
 $route['login'] = 'login';
 $route['default_controller'] = 'cadastro';
+$route['logado'] = 'login/sucesso';
