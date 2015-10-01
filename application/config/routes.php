@@ -53,7 +53,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['404_override'] = '';
 // $route['translate_uri_dashes'] = FALSE;
 
+$route['index'] = 'login';
 $route['cadastro'] = 'cadastro';
+
 $route['login'] = 'login';
+$route['login/entrar'] = 'login/entrar';
+$route['login/sair'] = 'login/sair';
+
 $route['default_controller'] = 'cadastro';
 $route['logado'] = 'login/sucesso';
+$route['perfil'] = 'perfil';

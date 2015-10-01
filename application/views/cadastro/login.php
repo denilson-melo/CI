@@ -2,7 +2,7 @@
 		
 		<h2>LOGIN</h2>
 		<?php echo validation_errors(); ?>
-		<?php echo form_open('login'); ?>
+		<?php echo form_open('login/entrar'); ?>
 		<?php if (!empty($erro)) echo $erro ?>
 			
 			<div class="input-field">

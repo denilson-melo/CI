@@ -3,59 +3,45 @@ class Login_model extends CI_Model{
 	public function __construct()
 	{
 		$this->load->database();
-		$this->load->helper('url');
 	}
-	
-	public function get_email_existe( $email )
+
+	public function login( $email, $enteredPassword )
 	{
-		$this->db->select('email');
-		$this->db->from('usuario');
-		$this->db->where('email', $email);
-		$resultado = $this->db->get();
-		if ( $resultado->num_rows() == 1){
-			return true;
+		$userData = array();
+		$user = $this->find_user($email);
+		if ( !isset($user) ) {
+			$userData['error'] = "Email não encontrado";
+			return $userData;
 		}
-		return false;
+		if ( $this->correct_password($enteredPassword, $user->senha) ) {
+			$userData['nome'] = $user->nome;
+			$userData['email'] = $user->email;
+			return $userData;
+		}else{
+			$userData = array();
+			$userData['error'] = "Senha incorreta";
+			return $userData;		
+		}
 	}
 	
-	public function login( $email, $senha )
+	private function find_user($email=NULL)
 	{
-		$data = array();
 		$this->db->select('*');
 		$this->db->from('usuario');
 		$this->db->where('email', $email);
-		$resultado = $this->db->get();
-		foreach ($resultado->result() as $row) {
-				$data['nome'] = $row->nome;
-				$data['email'] = $row->email;
-				$data['senha'] = $row->senha;			
+		$rows = $this->db->get();
+		if ( $rows->num_rows() == 1 ) {
+			$user = $rows->result(); 
+			return $user[0]; // 0 because it's the first and only row from the query
 		}
-		if ( !password_verify( $senha, $data['senha'] )) {
-			$data = array();
-			$data['erro'] = "Senha incorreta";
-		}
-		return $data;
+		return NULL;
 	}
-	
-	public function valida_login($email=NULL, $senha=NULL)
+
+	// Uses PHP 5.5+ function to see if the string matches the stored
+	private function correct_password($passed, $stored)
 	{
-		if($email!=NULL || $senha!=NULL):
-			$this->db->select('*');
-			$this->db->from('usuario');
-			$this->db->join('pessoa as pes', 'usuario.fk_id_pessoa = pes.id_pessoa');
-			$this->db->where('usuario.email', $email);
-			$this->db->where('usuario.senha', $senha);
-			
-			$resultado = $this->db->get();
-			
-			if($resultado->num_rows() == 1):
-				return $resultado;
-			else:
-				return false;
-			endif;
-		endif;
+		return password_verify( $passed, $stored );
 	}
-	
 	
 }
  ?>

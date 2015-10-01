@@ -13,13 +13,14 @@
 				<a href="#" class="button-collapse" data-activates="nav-mobile"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<?php 
-						if ( $_SESSION['logado']==true ){
-							echo '<li><a href="#">'.$_SESSION["nome"].'</a></li>';
+						if ( isset($_SESSION['logado']) ){
+							echo '<li><a href="'.base_url().'index.php/perfil">'.$_SESSION["nome"].'</a></li>';
+							echo '<li><a href="'.base_url().'index.php/login/sair">Sair</a></li>';
 						} else { 
-							echo '<li><a href="login">Login</a></li>';
+							echo '<li><a href="'.base_url().'index.php/login">Login</a></li>';
+							echo '<li><a href="'.base_url().'index.php/cadastro">Cadastro</a></li>';
 						}
 					?>
-					<li><a href="cadastro">Registrar</a></li>
 				</ul>
 				<ul class="side-nav" id="nav-mobile">
 					<li><a href="#">Login</a></li>
