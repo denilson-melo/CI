@@ -55,6 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['index'] = 'login';
 $route['cadastro'] = 'cadastro';
+$route['home'] = 'home';
 
 $route['login'] = 'login';
 $route['login/entrar'] = 'login/entrar';

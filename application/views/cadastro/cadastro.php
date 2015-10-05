@@ -4,14 +4,14 @@
 		<div class="input-field">
 			<i class="material-icons prefix">account_circle</i>
 			<label for="nome">Nome</label>
-			<input type="text" name="nome" class="col s16"/>
+			<input type="text" name="nome" class="col s16" value="<?= set_value('nome'); ?>"/>
 			<?php echo form_error('nome'); ?>
 		</div>
 		
 		<div class="input-field">
 			<i class="material-icons prefix">email</i>
 			<label for="email">Email</label>
-			<input type="email" name="email"/>
+			<input type="email" name="email" value="<?= set_value('email'); ?>"/>
 			<?php echo form_error('email'); ?>
 		</div>
 
@@ -40,7 +40,7 @@
 		<div class="input-field">
 			<i class="material-icons prefix">phone</i>
 			<label for="telefone">Telefone</label>
-			<input type="text" name="telefone"/>
+			<input type="text" name="telefone" value="<?= set_value('telefone'); ?>"/>
 		</div>
 
 		<button class="btn waves-effect waves-light" type="submit" name="action">

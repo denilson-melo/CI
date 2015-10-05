@@ -1,1 +1,5 @@
 <h2>PERFIL</h2>
+<?=$nome?><br>
+<?=$email?><br>
+<?=$senha?><br>
+<?=$sexo?>
